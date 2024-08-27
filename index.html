@@ -7,10 +7,13 @@ layout: default
 
     <!-- Header -->
     <header id="header">
-        <h1><a href="index.html"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></h1>
+        <h1><a href="index.html"><strong>{{ site.title }}</strong> {{ site.subtitle }}</a></h1>
         <nav>
             <ul>
-                <li><a href="#footer" class="icon fa-info-circle">About</a></li>
+                <li><a href="#about" class="icon fa-circle-info">About</a></li>
+                <li><a href="https://violetrollergirl.tryst.link/#availability" target="_blank" class="icon fa-plane">Tours</a></li>
+                <li><a href="#rates" class="icon fa-coins">Rates</a></li>
+                <li><a href="#contact" class="icon fa-envelope-open">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -30,101 +33,213 @@ layout: default
         {% endfor %}
     </div>
 
-    <!-- Footer -->
-    <footer id="footer" class="panel">
+    <!-- About section. -->
+    <section id="about" class="panel">
         <div class="inner split">
             <div>
-                <section>
-                    <h2>{{ site.footer.name }}</h2>
-                    <p>{{ site.footer.bio }}</p>
-                    <p>{{ site.footer.github }}</p>
-                </section>
-                <section>
-                    <h2>Sponsor</h2>
-                    <div class="presentify">
-                        <div class="presentify-logo">
-                            <a href="https://presentify.compzets.com">
-                                <img src="https://camo.githubusercontent.com/7238b763f1ed0a7413105d5eb44368c1fc2b339e373c8927e3f02391667d55f2/68747470733a2f2f70726573656e746966792e636f6d707a6574732e636f6d2f6173736574732f696d672f70726573656e746966792f6170702d69636f6e2d3531322e706e67"
-                                 alt="presentify-logo" />
-                            </a>
-                        </div>
-                        <div class="presentify-text">
-                            Turn your screen into a canvas when on video calls and articulate your thoughts better than
-                            ever with the <a href="https://presentify.compzets.com">Presentify</a> app.
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h2>Follow me on ...</h2>
-                    <ul class="icons">
-                        {% if site.social_urls.facebook %}
-                            <li>
-                                <a href="{{ site.social_urls.facebook }}" class="icon fa-facebook">
-                                    <span class="label">Facebook</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% if site.social_urls.twitter %}
-                            <li>
-                                <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter">
-                                    <span class="label">Twitter</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% if site.social_urls.instagram %}
-                            <li>
-                                <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram">
-                                    <span class="label">Instagram</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% if site.social_urls.dribbble %}
-                            <li>
-                                <a href="{{ site.social_urls.dribbble }}" class="icon fa-dribbble">
-                                    <span class="label">Dribbble</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% if site.social_urls.github %}
-                            <li>
-                                <a href="{{ site.social_urls.github }}" class="icon fa-github">
-                                    <span class="label">GitHub</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% if site.social_urls.linkedin %}
-                            <li>
-                                <a href="{{ site.social_urls.linkedin }}" class="icon fa-linkedin">
-                                    <span class="label">LinkedIn</span>
-                                </a>
-                            </li>
-                        {% endif %}
-                    </ul>
-                </section>
-                <p class="copyright">
-                    &copy; {{ site.author }}. Design: {{ site.web_design }}
-                </p>
+                <h2>{{ site.title }}</h2>
+                <P>I'm Vi (pronounced like "eye" but with a V), a bubbly, sweet, and adventurous trans girlfriend experience with an optional kinky, submissive twist. Equal parts whip-smart and whipping girl, I'm fit and athletic, with soft, curly red ringlets and a natural aesthetic that can be hard femme, curious kitten, sexy librarian, cyberpunk hentai seductress, or a fantasy somewhere in between.</p>
+                <p>I frequently host at convenient, private incall spaces in NYC 🗽 and Boston. 🏙️</p>
+                <p>While my candy coating comes in a couple flavors that help me seamlessly shape shift between a fun loving hippie at rave festival campgrounds to a smirking pool shark bending over the billiards table, on the inside I love nothing more than being your good girl, a shameless and free-spirited companion with whom it's easy to relax. I'm drawn to the intimacy of sharing myself and learning about others while gazing at skyline views from rooftop lounges just as much as to the thrill of making out in dark corners of the club, or even through the bars of a dungeon cage.</p>
+                <p>I'm often rollerblading when in the city, or hiking when in the woods. I'm multilingual, having went to Jewish grade school where I was that soft spoken, nerdy, bookish student reading STEM texts and sci-fi stories (one of my favorite genres). Geeking out together or getting to see your niche competencies always excites me!</p>
+                <p>For sweeter cravings, I offer an oasis full of affection, connection, and intimate moments that will make you feel absolutely adored. Let's go to a beach and listen to the waves, get in cold water and then make each other hot, or sail into a sunset like lovers in a movie! Let's cuddle on a balcony and watch a cityscape sparkle in the sky, or go to a comedy show to laugh and get just this side of inappropriately drunk together. I love a fancy cocktail and white tablecloth dinner but I'll smile just as much at a dive bar bending over a pool table and making bets on trick shots, snuggling in the back of a movie theater, or in the kitchen lady-and-the-tramp'ing our way through a home-cooked meal before enjoying bedroom desserts.</p>
+                <p>For spicier desires, I relish being a very, very good girl, the kind daddy (or mommy) can spank to make me better! If you're new to taking charge, I can tease out the dominance from you. It's a particular specialty of mine; I want to hear all about your kinks!</p>
+                <p>Ultimately, I'm a nice girl who purrs appreciately when she's pet, yet also cheerfully turns naughty when given the right commands.</p>
             </div>
             <div>
-                <section>
-                    <h2>Get in touch</h2>
-                    <form method="post" action="#">
-                        <div class="field half first">
-                            <input type="text" name="name" id="name" placeholder="Name"/>
-                        </div>
-                        <div class="field half">
-                            <input type="text" name="email" id="email" placeholder="Email"/>
-                        </div>
-                        <div class="field">
-                            <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-                        </div>
-                        <ul class="actions">
-                            <li><input type="submit" value="Send" class="special"/></li>
-                            <li><input type="reset" value="Reset"/></li>
-                        </ul>
-                    </form>
-                </section>
+                <h2>Tech specs</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>
+                                Height
+                            </th>
+                            <td>
+                                5 feet, 7 inches (169cm)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Body type
+                            </th>
+                            <td>
+                                Athletic, toned
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Cup size</th>
+                            <td>AA</td>
+                        </tr>
+                        <tr>
+                            <th>Tattoos</th>
+                            <td>One interactive gem ;)</td>
+                        </tr>
+                        <tr>
+                            <th>Piercings</th>
+                            <td>Ears, nipples</td>
+                        </tr>
+                        <tr>
+                            <th>Passport-ready</th>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <th>NDA-ready</th>
+                            <td>Yes</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+                {% include social-urls.html %}
+                <p class="copyright">
+                    &copy; {{ site.author }}
+                </p>
             </div>
         </div>
-    </footer>
+    </section>
+
+    <!-- Rates section -->
+    <section id="rates" class="panel">
+        <h2>Configuration and customization</h2>
+        <p>My rates for incalls and outcalls are the same, but a $100 flat-rate incall fee may apply for bookings under 2 hours, and any applicable transportation costs for outcalls are not included in the fee schedule. Each in-date extension equals my base hourly rate.</p>
+        <div class="inner split">
+            <div>
+                <table>
+                    <caption>
+                        GFE/vanilla full service fee schedule
+                    </caption>
+                    <tbody>
+                        <tr>
+                            <th>1 hour</th>
+                            <td>$400 USD</td>
+                        </tr>
+                        <tr>
+                            <th>90 minutes</th>
+                            <td>$540 USD</td>
+                        </tr>
+                        <tr>
+                            <th>2 hours</th>
+                            <td>$700 USD</td>
+                        </tr>
+                        <tr>
+                            <th>3 hours</th>
+                            <td>$960 USD</td>
+                        </tr>
+                        <tr>
+                            <th>4 hours</th>
+                            <td>$1200 USD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <caption>
+                        Pro-submissive/BDSM full service fee schedule
+                    </caption>
+                    <tbody>
+                        <tr>
+                            <th>1 hour</th>
+                            <td>$600 USD</td>
+                        </tr>
+                        <tr>
+                            <th>2 hours</th>
+                            <td>$1000 USD</td>
+                        </tr>
+                        <tr>
+                            <th>3 hours</th>
+                            <td>$1440 USD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h2>Policies</h2>
+        <div class="inner split">
+            <div>
+                <h3>Deposits</h3>
+                <p>I accept deposits via payment apps or gift cards. Always leave the payment app's transaction note/memo field blank!</p>
+                <ul>
+                    <li>🏡 One-quarter (25%) of the total booking cost while in my hometown.</li>
+                    <li>🛫 One-third (33%) of the total booking cost while touring.</li>
+                </ul>
+                <p>Deposits are non-refundable and non-transferable, except when cancelling in certain cases. (See <a href="#cancellation-policy">my cancellation policy</a> for details.) Your date is not confirmed until its deposit is confirmed.</p>
+            </div>
+            <div>
+                <h3>Cancellations</h3>
+                <p>It's okay, you can always cancel or reschedule a date for any reason, no questions asked. If you cancel with:</p>
+                <ul>
+                    <li>3 or more days (72 hours) notice, the full amount (100%) of your non-refundable deposit can be applied to another date..</li>
+                    <li>3 to 1 days (72-24 hours) notice, half (50%) of your non-refundable deposit can be applied one time only to another datee</li>
+                    <li>1 day or less (24 hours) notice, your non-refundable deposit will be forfeited.</li>
+                </ul>
+                <p>When applying the deposit for a cancelled date towards the next, that next date must be no later than 3 months after your original booking.</p>
+                <p>In the unlikely event that I have to cancel our date, you'll promptly have your full deposit returned to you.</p>
+            </div>
+        </div>
+    </section><!-- #rates -->
+
+    <section id="contact" class="panel">
+        <h2>Communication channels</h2>
+        <p>Are you ready for me to be your shape shifting vixen and compassionate companion? Please be sure you understand my <a href="#rates">rates and policies</a> before messaging me. When you're ready, I can be reached via any of the following channels. WhatsApp is preferred thanks to its enhanced security and privacy.</p>
+        <ul class="icons">
+            <li>
+                <a class="icon fa-envelope" href="mailto:{{ site.contact.email }}?subject=" title="Email">
+                    <span class="label">Email</label>
+                </a>
+            </li>
+            <li>
+                <a class="icon fa-comment-sms" href="sms:{{ site.contact.sms }}" title="Text/SMS">
+                    <span class="label">Text/SMS</label>
+                </a>
+            </li>
+            <li>
+                <a class="icon fa-whatsapp" href="{{ site.contact.whatsapp }}" title="WhatsApp">
+                    <span class="label">WhatsApp</label>
+                </a>
+            </li>
+        </ul>
+        <p>Please be patient. It may take several days for me to respond. Thank you!</p>
+        <div class="inner split">
+            <div>
+                <h2>Contact instructions</h2>
+                <p>I respond best to respectful inquiries from individuals or couples who are fueled by my energy, are hungry for intimacy, or eager to shed lingering shames. Please reach out without fear of your gender, race, ethnicity, size, or religion. Please do not use sexually explicit language when writing to me.</p>
+                <p>In your first message, tell me:</p>
+                <ul>
+                    <li>👋🏻 Your name.</li>
+                    <li>🗓️ When you're hoping to see me.</li>
+                    <li>⏳ How long you'd like to see me for.</li>
+                    <li>🗺️ Where you want to meet: my place/"incall," your place/"outcall," or a venue for a social date/meet and greet.</li>
+                    <li>If this is our first contact, choose a <a href="#screening-options">screening method</a> you're comfortable using.</li>
+                </ul>
+            </div>
+            <div>
+                <h2 id="screening-options">Screening options</h2>
+                <p>If you're reaching out to me for the first time, you'll need to provide some lightweight screening info. I treat your information with the utmost confidentiality, as discretion and screening helps assure our mutual safety and comfort. You can successfully screen with any <em>ONE</em> of the following options:</p>
+                <ul>
+                    <li>🤳🌐 A selfie, social media profile link, and non-burner phone number, OR</li>
+                    <li>🪪🤳 A selfie of yourself holding a valid government-issued photo ID card.</li>
+                </ul>
+                <p>I'm looking forward to hearing from you❣️</p>
+            </div>
+        </div><!-- .inner.split -->
+        <!-- TODO: Get the form working. -->
+        <!--
+        <h2>Booking form</h2>
+        <form method="post" action="#">
+            <div class="field half first">
+                <input type="text" name="name" id="name" placeholder="Name"/>
+            </div>
+            <div class="field half">
+                <input type="text" name="email" id="email" placeholder="Email"/>
+            </div>
+            <div class="field">
+                <textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+            </div>
+            <ul class="actions">
+                <li><input type="submit" value="Send" class="special"/></li>
+                <li><input type="reset" value="Reset"/></li>
+            </ul>
+        </form>
+        -->
+    </section><!-- #contact -->
 </div>

@@ -1,7 +1,7 @@
-<section>
-    <h2>Links</h2>
+<section id="socials">
+    <h2 id="links">Links</h2>
     <p>See more of me elsewhere, and follow me online.</p>
-    <ul class="icons">
+    <ul class="icons text-center">
         {% if site.social_urls.facebook %}
             <li>
                 <a href="{{ site.social_urls.facebook }}" class="icon fa-5x fa-facebook">
@@ -48,6 +48,13 @@
             <li>
                 <a href="{{ site.social_urls.linktree }}" class="icon fa-5x fa-link" title="Linktr.ee">
                     <span class="label">Linktr.ee</span>
+                </a>
+            </li>
+        {% endif %}
+        {% if site.social_urls.wishlist %}
+            <li>
+                <a href="{{ site.social_urls.wishlist }}" class="icon fa-5x fa-gift" title="Wishlist">
+                    <span class="label">Wishlist</span>
                 </a>
             </li>
         {% endif %}

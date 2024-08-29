@@ -36,9 +36,8 @@
 			display: inline-block;
 			font-size: 1em;
 			line-height: 1;
-			margin: 0;
-			vertical-align: middle;
-
+			margin: .5em 0 0 0;
+            vertical-align: middle;
 			a {
 				border: 0;
 				color: inherit;
@@ -50,9 +49,9 @@
 		}
 
 		nav {
-			position: absolute;
-			right: 0;
-			top: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
 
 			> ul {
 				list-style: none;

@@ -10,10 +10,12 @@ layout: default
         <h1><a href="index.html"><strong>{{ site.title }}</strong> {{ site.subtitle }}</a></h1>
         <nav>
             <ul>
-                <li><a href="#about" class="icon fa-circle-info">About</a></li>
+                <li><a href="#navpanel" class="icon fa-bars">Pages</a></li>
+                <!--
                 <li><a href="https://violetrollergirl.tryst.link/#availability" target="_blank" class="icon fa-plane">Tours</a></li>
                 <li><a href="#rates" class="icon fa-coins">Rates</a></li>
-                <li><a href="#contact" class="icon fa-envelope-open">Contact</a></li>
+                <li><a href="#contact" class="icon fa-envelope-open">Booking</a></li>
+                -->
             </ul>
         </nav>
     </header>
@@ -32,6 +34,15 @@ layout: default
         {% endif %}
         {% endfor %}
     </div>
+
+    <section id="navpanel" class="panel">
+        <ul class="fa-ul">
+            <li><span class="fa-li fa-solid fa-circle-info"></span><a href="#about">About</a></li>
+            <li><span class="fa-li fa-solid fa-coins"></span><a href="#rates">Rates</a></li>
+            <li><span class="fa-li fa-solid fa-envelope-open"></span><a href="#contact">Booking</a></li>
+            <li><span class="fa-li fa-solid fa-plane"></span><a href="https://violetrollergirl.tryst.link/#availability" target="_blank">Tours/Travel</a></li>
+        </ul>
+    </section>
 
     <!-- About section. -->
     <section id="about" class="panel">
@@ -85,7 +96,7 @@ layout: default
                                     <li>New York, NY, USA</li>
                                     <li>Boston, MA, USA</li>
                                 </ul>
-                                Inquire about <acronym title="Fly-Me-To-You">FMTY</acronym> options.
+                                <a href="#contact">Inquire</a> about <acronym title="Fly-Me-To-You">FMTY</acronym> options.
                             </td>
                         </tr>
                         <tr>
@@ -110,7 +121,7 @@ layout: default
     <!-- Rates section -->
     <section id="rates" class="panel">
         <h2>Configuration and customization</h2>
-        <p>My rates for incalls and outcalls are the same, except a $100 flat-rate incall fee may apply, and any applicable transportation costs for outcalls are not included in the tables below. Each in-date extension equals my base hourly rate. Please <a href="#contact">inquire</a> about rates for content shoots and collaborations.</p>
+        <p>My rates for incalls and outcalls are the same, except a $100 flat-rate incall fee may apply, and any applicable transportation costs for outcalls are not included in the fee schedules below. Each in-date extension equals my base hourly rate. Please <a href="#contact">inquire</a> about rates for content shoots, collaborations, longer multi-day dates, or long-term arrangements.</p>
         <div class="inner split">
             <div>
                 <table>
@@ -120,13 +131,19 @@ layout: default
                     <tbody>
                         <tr>
                             <th>1 hour</th>
-                            <td>$400 USD</td>
+                            <td>
+                                <p>$400 USD</p>
+                                <details name="gfe-details">
+                                    <summary>Details</summary>
+                                        Dedicated playdate. Discounted rates available for longer bookings as shown. Does not include incall fee or transportation cost.
+                                </details>
+                            </td>
                         </tr>
                         <tr>
                             <th>90 minutes</th>
                             <td>
                                 <p>$540 USD</p>
-                                <details>
+                                <details name="gfe-details">
                                     <summary>Details</summary>
                                     10% off, recommend minimum.
                                 </details>
@@ -136,7 +153,7 @@ layout: default
                             <th>2 hours</th>
                             <td>
                                 <p>$700 USD</p>
-                                <details>
+                                <details name="gfe-details">
                                     <summary>Details</summary>
                                     12.5% off
                                 </details>
@@ -146,7 +163,7 @@ layout: default
                             <th>3 hours</th>
                             <td>
                                 <p>$960 USD</p>
-                                <details>
+                                <details name="gfe-details">
                                     <summary>Details</summary>
                                     20% off
                                 </details>
@@ -155,8 +172,8 @@ layout: default
                         <tr>
                             <th>4 hours</th>
                             <td>
-                                <p>$1200 USD</p>
-                                <details>
+                                <p>$1,200 USD</p>
+                                <details name="gfe-details">
                                     <summary>Details</summary>
                                     25% off, requires outing.
                                 </details>
@@ -165,10 +182,20 @@ layout: default
                         <tr>
                             <th>Overnight (12 hours)</th>
                             <td>
-                                <p>$2400 USD</p>
-                                <details>
+                                <p>$2,400 USD</p>
+                                <details name="gfe-details">
                                     <summary>Details</summary>
                                     50% discount off my hourly rate. Perfect for an evening full of cuddles, or sprinkled with light fetishes like spanking and modest restraints. Requires outing, shared meal, and beauty sleep.
+                                </details>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Getaway weekend</th>
+                            <td>
+                                <p>$4,000 USD</p>
+                                <details name="gfe-details">
+                                    <summary>Details</summary>
+                                    Party hard, play harder! I'll be all yours for two full days (except for some solo moments to let us freshen up for one another in our mysterious ways), so you can enjoy a weekend escape with me. Requires outings for some fresh air! Ask about fly-me-to-you options!
                                 </details>
                             </td>
                         </tr>
@@ -183,13 +210,19 @@ layout: default
                     <tbody>
                         <tr>
                             <th>1 hour</th>
-                            <td>$600 USD</td>
+                            <td>
+                                <p>$600 USD</p>
+                                <details name="pro-sub-details">
+                                    <summary>Details</summary>
+                                    Make me vulnerable, or watch me bruise. Available only to returning friends after our first date. Discounted rates available for longer bookings as shown. Does not include incall fee or transportation cost.
+                                </details>
+                            </td>
                         </tr>
                         <tr>
                             <th>2 hours</th>
                             <td>
-                                <p>$1000 USD</p>
-                                <details>
+                                <p>$1,000 USD</p>
+                                <details name="pro-sub-details">
                                     <summary>Details</summary>
                                     16.7% off, recommended minimum.
                                 </details>
@@ -198,8 +231,8 @@ layout: default
                         <tr>
                             <th>3 hours</th>
                             <td>
-                                <p>$1440 USD</p>
-                                <details>
+                                <p>$1,440 USD</p>
+                                <details name="pro-sub-details">
                                     <summary>Details</summary>
                                     20% off, requires time for warmup and cool down/after care.
                                 </details>
@@ -273,14 +306,14 @@ layout: default
             <div>
                 <h3>Deposits</h3>
                 <p>I accept deposits via payment apps or gift cards. Always leave the payment app's transaction note/memo field blank!</p>
-                <ul>
-                    <li>🏡 One-quarter (25%) of the total booking cost while in my hometown.</li>
-                    <li>🛫 One-third (33%) of the total booking cost while touring.</li>
+                <ul class="fa-ul">
+                    <li><span class="fa-li fa-solid fa-house"></span>One-quarter (25%) of the total booking cost while in my hometown.</li>
+                    <li><span class="fa-li fa-solid fa-plane"></span>One-third (33%) of the total booking cost while touring.</li>
                 </ul>
-                <p>Deposits are non-refundable and non-transferable, except when cancelling in certain cases. (See <a href="#cancellation-policy">my cancellation policy</a> for details.) Your date is not confirmed until its deposit is confirmed.</p>
+                <p>Deposits are non-refundable and non-transferable, except when cancelling in certain cases. (See <a href="#cancellations">my cancellation policy</a> for details.) Your date is not confirmed until its deposit is confirmed.</p>
             </div>
             <div>
-                <h3>Cancellations</h3>
+                <h3 id="cancellations">Cancellations</h3>
                 <p>It's okay, you can always cancel or reschedule a date for any reason, no questions asked. If you cancel with:</p>
                 <ul>
                     <li>3 or more days (72 hours) notice, the full amount (100%) of your non-refundable deposit can be applied to another date.</li>
@@ -294,11 +327,16 @@ layout: default
     </section><!-- #rates -->
 
     <section id="contact" class="panel">
-        <h2>Communication channels</h2>
-        <p>Are you ready for me to be your shape shifting vixen and compassionate companion? Please be sure you understand my <a href="#rates">rates and policies</a> before messaging me. When you're ready, I can be reached via any of the following channels. WhatsApp is preferred thanks to its enhanced security and privacy.</p>
-        <ul class="icons">
+        <h2>Connection methods</h2>
+        <p>Are you ready for me to be your shape shifting vixen and compassionate companion? Please be sure you understand my <a href="#rates">rates and policies</a> before writing. When you're ready, I can be reached via any of the following communication channels. I strongly prefer <a href="https://whatsapp.com/">WhatsApp</a> if feasible for you, or email.</p>
+        <ul class="icons text-center">
             <li>
-                <a class="icon fa-envelope fa-5x" href="mailto:{{ site.contact.email }}?subject=" title="Email">
+                <a class="icon fa-whatsapp fa-5x" href="{{ site.contact.whatsapp }}" title="WhatsApp">
+                    <span class="label">WhatsApp</label>
+                </a>
+            </li>
+            <li>
+                <a class="icon fa-envelope fa-5x" href="mailto:{{ site.contact.email }}?subject=&amp;body=" title="Email">
                     <span class="label">Email</label>
                 </a>
             </li>
@@ -307,34 +345,44 @@ layout: default
                     <span class="label">Text/SMS</label>
                 </a>
             </li>
-            <li>
-                <a class="icon fa-whatsapp fa-5x" href="{{ site.contact.whatsapp }}" title="WhatsApp">
-                    <span class="label">WhatsApp</label>
-                </a>
-            </li>
         </ul>
-        <p>Please be patient. It may take several days for me to respond. Thank you!</p>
+        <p>Please be patient as it may take several days for me to reply. Thank you!</p>
         <div class="inner split">
             <div>
                 <h2>Availability</h2>
                 <p>I'm fortunate to have flexibility in my schedule, and can usually be available at most times of the day or night. That said, I'm not a morning kitten, and planning our date 2 or more days in advance will give us the best experience together. Same-day trysts are <em>sometimes</em> possible, if seeing one another is convenient for me.</p>
                 <p>With advanced scheduling, I'm also passport-ready and available:</p>
-                <ul>
-                    <li>🚆 anywhere with train access in the tri-state area for bookings of 3 hours or more.</li>
-                    <li>✈️  domestically (within the continental United States) for bookings of 6 hours or more.</li>
-                    <li>🌍 some international locales.</li>
+                <ul class="fa-ul">
+                    <li><span class="fa-li fa-solid fa-train"></span>anywhere with train access in the tri-state area for bookings of 3 hours or more.</li>
+                    <li><span class="fa-li fa-solid fa-plane"></span>domestically (within the continental United States) for bookings of 6 hours or more.</li>
+                    <li><span class="fa-li fa-solid fa-earth-europe"></span>some international locales.</li>
                 </ul>
             </div>
             <div>
                 <h2>Contact instructions</h2>
-                <p>I respond best to respectful inquiries from individuals or couples who are fueled by my energy, are hungry for intimacy, or eager to shed lingering shames. Please reach out without fear of your gender, race, ethnicity, size, or religion. Please do not use sexually explicit language when writing to me.</p>
-                <p>In your first message, tell me:</p>
-                <ul>
-                    <li>👋🏻 Your name.</li>
-                    <li>🗓️ When you're hoping to see me.</li>
-                    <li>⏳ How long you'd like to see me for.</li>
-                    <li>🗺️ Where you want to meet: my place/"incall," your place/"outcall," or a venue for a social date/meet and greet.</li>
-                    <li>If this is our first contact, choose a <a href="#screening-options">screening method</a> you're comfortable using.</li>
+                <p>I respond best to respectful inquiries from individuals or couples who are fueled by my energy, are hungry for intimacy, or eager to shed lingering shames. Please reach out without fear of your gender, race, ethnicity, size, or religion.</p>
+                <p>When writing me, please:</p>
+                <div class="split-even">
+                    <div>
+                        <p>do not&hellip;</p>
+                        <ul>
+                            <li>use sexually explicit language.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>do&hellip;</p>
+                        <ul>
+                            <li>contact me individually, even if you are part of a couple or group, so I know everyone is on the same page and consenting.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p><strong>In your first message</strong>, tell me:</p>
+                <ul class="fa-ul">
+                    <li><span class="fa-li fa-solid fa-signature"></span>Your name.</li>
+                    <li><span class="fa-li fa-solid fa-calendar"></span>When you're hoping to see me.</li>
+                    <li><span class="fa-li fa-solid fa-hourglass"></span>How long you'd like to see me for.</li>
+                    <li><span class="fa-li fa-solid fa-map"></span>Where you want to meet: my place/"incall," your place/"outcall," or a venue for a social date/meet and greet.</li>
+                    <li><span class="fa-li fa-solid fa-id-card"></span>If this is our first contact, choose a <a href="#screening-options">screening method</a> you're comfortable using.</li>
                 </ul>
             </div>
             <div>

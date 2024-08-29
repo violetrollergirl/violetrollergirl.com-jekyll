@@ -1,6 +1,6 @@
 # Base configs
-#baseurl: "https://photography.rampatra.com"
-baseurl: "" # Comment the above line and uncomment this to test the website locally
+baseurl: "https://violetrollergirl.github.io/violetrollergirl.com-jekyll/"
+#baseurl: "" # Comment the above line and uncomment this to test the website locally
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 
@@ -9,14 +9,14 @@ title: Violet Rollergirl
 subtitle: Submissive kinky companion
 author: Violet Rollergirl
 contact:
-  email: violetrollergirl@protonmail.com
+  booking_email: violetrollergirl@protonmail.com?subject=&amp;body=
   sms: +13473157531
   whatsapp: "https://wa.me/17252011620?text=Hi%20Violet%2C%20my%20name%20is%20__.%20I%20found%20you%20on%20Tryst%20and%20would%20like%20to%20book%20an%20INCALL%2FOUTCALL%20on%20__%20for%20__%20hours.%0D%0A%0D%0AThanks%21"
 # Configure which exif data to display
 # Tag is the actual exif tag, icon is a fontawesome icon. Use JSON notation without line breaks
 #exif: '[{"tag": "Model", "icon": "camera-retro"}, {"tag": "FNumber", "icon": "dot-circle-o"}, {"tag": "ExposureTime", "icon": "clock-o"}, {"tag": "ISOSpeedRatings", "icon": "info-circle"}]'
 social_urls:
-  twitter: https://twitter.com/ViRollergirl
+  twitter: https://x.com/ViRollergirl
   linktree: https://linktr.ee/violetrollergirl
   wishlist: https://throne.com/violetrollergirl
   #instagram: "https://www.instagram.com/ram_patra"

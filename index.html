@@ -2,15 +2,18 @@
 layout: default
 ---
 
-<!-- Wrapper -->
 <div id="wrapper">
 
-    <!-- Header -->
     <header id="header">
-        <h1><a href="index.html"><strong>{{ site.title }}</strong> {{ site.subtitle }}</a></h1>
+        <h1>
+            <a href="index.html">
+                <strong>{{ site.title }}</strong>
+                {{ site.subtitle }}
+            </a>
+        </h1>
         <nav>
             <ul>
-                <li><a href="#navpanel" class="icon fa-bars"><span style="display:none;">Pages</span></a></li>
+                <li><a href="#navpanel" class="icon fa-bars"><span style="display: none;">Pages</span></a></li>
                 <!--
                 <li><a href="https://violetrollergirl.tryst.link/#availability" target="_blank" class="icon fa-plane">Tours</a></li>
                 <li><a href="#rates" class="icon fa-coins">Rates</a></li>
@@ -18,9 +21,8 @@ layout: default
                 -->
             </ul>
         </nav>
-    </header>
+    </header><!-- #header -->
 
-    <!-- Main -->
     <div id="main" data-exif='{{ site.exif }}'>
         {% for image in site.static_files %}
         {% if image.path contains 'fulls' %}
@@ -36,15 +38,16 @@ layout: default
     </div>
 
     <section id="navpanel" class="panel">
-        <ul class="fa-ul">
-            <li><a href="#about"><span class="icon fa-solid fa-circle-info"></span><br />About</a></li>
-            <li><a href="#rates"><span class="icon fa-solid fa-coins"></span><br />Rates</a></li>
-            <li><a href="#contact"><span class="icon fa-solid fa-envelope-open"></span><br />Contact</a></li>
-            <li><a href="https://violetrollergirl.tryst.link/#availability" target="_blank"><span class="icon fa-solid fa-plane"></span><br />Tours</a></li>
-        </ul>
+        <nav>
+            <ul class="fa-ul">
+                <li><a href="#about"><span class="icon fa-solid fa-circle-info"></span><br />About</a></li>
+                <li><a href="#rates"><span class="icon fa-solid fa-coins"></span><br />Rates</a></li>
+                <li><a href="#contact"><span class="icon fa-solid fa-envelope-open"></span><br />Contact</a></li>
+                <li><a href="https://violetrollergirl.tryst.link/#availability" target="_blank"><span class="icon fa-solid fa-plane"></span><br />Tours</a></li>
+            </ul>
+        </nav>
     </section>
 
-    <!-- About section. -->
     <section id="about" class="panel">
         <div class="inner split">
             <div>
@@ -116,11 +119,10 @@ layout: default
                 </p>
             </div>
         </div>
-    </section>
+    </section><!-- #about -->
 
-    <!-- Rates section -->
     <section id="rates" class="panel">
-        <h2>Configuration and customization</h2>
+        <h2>Customize your order</h2>
         <p>My rates for incalls and outcalls are the same, except a $100 flat-rate incall fee may apply, and any applicable transportation costs for outcalls are not included in the fee schedules below. Each in-date extension equals my base hourly rate. Please <a href="#contact">inquire</a> about rates for content shoots, collaborations, longer multi-day dates, or long-term arrangements.</p>
         <div class="inner split">
             <div>
@@ -165,7 +167,7 @@ layout: default
                                 <p>$960 USD</p>
                                 <details name="gfe-details">
                                     <summary>Details</summary>
-                                    20% off
+                                    20% off, minimum required for travel outside <a href="#about">my home cities</a> when not touring.
                                 </details>
                             </td>
                         </tr>
@@ -328,20 +330,20 @@ layout: default
 
     <section id="contact" class="panel">
         <h2 id="connection-methods">Connection methods</h2>
-        <p>Are you ready for me to be your shape shifting vixen and compassionate companion? Please be sure you understand my <a href="#rates">rates and policies</a> before writing. When you're ready, I can be reached via any of the following communication channels. I strongly prefer <a href="https://whatsapp.com/">WhatsApp</a> if feasible for you, or <a href="{{ site.contact.booking_email }}">directly via email</a> otherwise.</p>
+        <p>Are you ready for me to be your <a href="#about">shape shifting vixen and compassionate companion</a>? Please be sure you understand my <a href="#rates">rates and policies</a> before writing. When you're ready, I can be reached via any of the following communication channels. I strongly prefer <a href="{% include whatsapp-booking.url %}">WhatsApp</a> if feasible for you, otherwise <a href="{% include mailto-booking.url %}">directly via email</a>, and finally <a href="{% include sms-booking.url %}">via text/SMS</a> if necessary.</p>
         <ul class="icons text-center">
             <li>
-                <a class="icon fa-whatsapp fa-5x" href="{{ site.contact.whatsapp }}" title="WhatsApp">
+                <a class="icon fa-whatsapp fa-5x" href="{% include whatsapp-booking.url %}" title="WhatsApp">
                     <span class="label">WhatsApp</label>
                 </a>
             </li>
             <li>
-                <a class="icon fa-envelope fa-5x" href="mailto:{{ site.contact.booking_email }}" title="Email">
+                <a class="icon fa-envelope fa-5x" href="{% include mailto-booking.url %}" title="Email">
                     <span class="label">Email</label>
                 </a>
             </li>
             <li>
-                <a class="icon fa-comment-sms fa-5x" href="sms:{{ site.contact.sms }}" title="Text/SMS">
+                <a class="icon fa-comment-sms fa-5x" href="{% include sms-booking.url %}" title="Text/SMS">
                     <span class="label">Text/SMS</label>
                 </a>
             </li>
@@ -349,8 +351,8 @@ layout: default
         <p style="text-align: center;">Please be patient as it may take several days for me to reply. Thank you!</p>
         <div class="inner split">
             <div>
-                <h2>Availability</h2>
-                <p>I'm fortunate to have flexibility in my schedule, and can usually be available at most times of the day or night. That said, I'm not a morning kitten, and planning our date 2 or more days in advance will give us the best experience together. Same-day trysts are <em>sometimes</em> possible, if seeing one another is convenient for me.</p>
+                <h2 id="availability">Availability</h2>
+                <p>I'm fortunate to have flexibility in my schedule, and can usually be available at most times of the day or night. That said, <strong>I'm not a morning kitten, and planning our date 2 or more days in advance will give us the best experience together.</strong> Same-day trysts are <em>sometimes</em> possible, if seeing one another is convenient for me.</p>
                 <p>With advanced scheduling, I'm also passport-ready and available:</p>
                 <ul class="fa-ul">
                     <li><span class="fa-li fa-solid fa-train"></span>anywhere with train access in the tri-state area for bookings of 3 hours or more.</li>
@@ -359,24 +361,8 @@ layout: default
                 </ul>
             </div>
             <div>
-                <h2>Contact instructions</h2>
-                <p>I respond best to respectful inquiries from individuals or couples who are fueled by my energy, are hungry for intimacy, or eager to shed lingering shames. Please reach out without fear of your gender, race, ethnicity, size, or religion.</p>
-                <p>When writing me, please:</p>
-                <div class="split-even">
-                    <div>
-                        <p>do not&hellip;</p>
-                        <ul class="fa-ul">
-                            <li><span class="fa-li fa-solid fa-heart-crack"></span>use sexually explicit language.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p>do&hellip;</p>
-                        <ul class="fa-ul">
-                            <li><span class="fa-li fa-solid fa-people-group"></span>contact me individually, even if you are part of a couple or group, so I know everyone is on the same page and consenting.</li>
-                        </ul>
-                    </div>
-                </div>
-                <p><strong>In your first message</strong>, tell me:</p>
+                <h2 id="contact-instructions">In your first message</h2>
+                <p>Whenever you contact me, always tell me:</p>
                 <ul class="fa-ul">
                     <li><span class="fa-li fa-solid fa-signature"></span>Your name.</li>
                     <li><span class="fa-li fa-solid fa-calendar"></span>When you're hoping to see me.</li>
@@ -386,8 +372,39 @@ layout: default
                 </ul>
             </div>
             <div>
+                <h2 id="contact-dos-and-donts">Do's and don'ts</h2>
+                <p>I respond best to respectful inquiries from individuals or couples who are fueled by my energy, are hungry for intimacy, or eager to shed lingering shames. Please reach out without fear of your gender, race, ethnicity, size, or religion.</p>
+                <p>When writing me, please:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>do not&hellip;</th>
+                            <th>do&hellip;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="icon fa-solid fa-heart-crack"></span> use sexually explicit language.
+                            </td>
+                            <td>
+                                <span class="icon fa-solid fa-heart"></span> mention any specific needs, desires, or concerns you have in a respectful, professional tone.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="icon fa-solid fa-people-group"></span> speak for anyone other than yourself in your party if you are part of a couple or group.
+                            </td>
+                            <td>
+                                <span class="icon fa-solid fa-person"></span> speak only for yourself, even if you are part of a couple or group; each member of your party must contact me individually so I know everyone is on the same page and consenting.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
                 <h2 id="screening-options">Screening options</h2>
-                <p>If you're reaching out to me for the first time, you'll need to provide some lightweight screening info. I treat your information with the utmost confidentiality, as discretion and screening helps assure our mutual safety and comfort. You can successfully screen with any <em>ONE</em> of the following options:</p>
+                <p>If you're <a href="#contact-instructions">reaching out to me for the first time</a>, you'll need to provide some lightweight screening info. I treat your information with the utmost confidentiality, as discretion and screening helps assure our mutual safety and comfort. You can successfully screen with any <em>ONE</em> of the following options:</p>
                 <ul class="fa-ul">
                     <li><span class="fa-li fa-solid fa-image-portrait"></span>A selfie plus a social media profile link plus a non-burner phone number, <em>or</em></li>
                     <li><span class="fa-li fa-solid fa-id-card"></span>a selfie of yourself holding a valid government-issued photo ID card, <em>or</em></li>
@@ -416,4 +433,5 @@ layout: default
         </form>
         -->
     </section><!-- #contact -->
-</div>
+
+</div><!-- #wrapper -->

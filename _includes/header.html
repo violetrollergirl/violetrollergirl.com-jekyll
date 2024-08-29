@@ -24,10 +24,21 @@
     margin-bottom: 1em;
 }
 #navpanel ul {
-    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-#navpanel li {
-    flex: 1;
+#navpanel a {
+    display: block;
+    padding: 1em;
+    text-align: center;
+    border: 0;
+}
+#navpanel a:hover {
+    background: #34a58e;
+    color: #fff !important;
 }
 #rates details {
     font-size: smaller;
